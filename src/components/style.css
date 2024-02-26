@@ -219,12 +219,18 @@ button a{
 }
 .rbx1{
     width: 25%;
+    display: flex;
+    flex-direction: column;
 }
  .rbx2{
     width: 25%;
+    display: flex;
+    flex-direction: column;
  }
  .rbx3 {
    width: 25%;
+   display: flex;
+    flex-direction: column;
 }
 .rbx4{
     width: 25%;
@@ -233,8 +239,10 @@ button a{
     width: 200px;
     border-radius: 10px;
     padding-top: 10px;
+    display: flex;
+    flex-direction: column;
 }
-hr.new1 {
+/* hr.new1 {
     padding-top: 200px;
     border-top: 1px solid red;
-  }
+  } */

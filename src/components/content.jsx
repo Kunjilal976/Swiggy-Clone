@@ -1,5 +1,23 @@
 import React from 'react'
 function Content() {
+
+    function Login() {
+        return (
+          <>
+          <form className='App'>
+          <label type="text" >Email Id:</label>
+          <input type="text" placeholder='Enter Email'/><br />
+          <label type="text">Password:</label>
+          <input type="password"  placeholder='Password' /><br />
+          <input type="submit" value="Submit" />
+          </form>
+    
+          </>
+          
+        )
+      }  
+   
+
   return (
 <>    
 
@@ -10,7 +28,9 @@ function Content() {
             <div className="header">
             <img src="dhaba logo.png" alt=''/>
             <h2>PANJABI</h2>
-            <button> <a href="/">Login</a></button>
+            <button onclick={Login}>Login</button>
+
+          
             <button><a href="/">Sign Up</a></button>
     
             </div>
