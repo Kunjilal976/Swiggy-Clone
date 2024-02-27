@@ -1,22 +1,28 @@
-import React, { useState } from "react";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import Layout from "./Pages/Layout";
+// import Home from "./Pages/Home";
+// import Blogs from "./Pages/Blogs";
+// import Contact from "./Pages/Contact";
+// import NoPage from "./Pages/NoPage";
+// import Menu from "./Pages/Menu"
+// import About from "./Pages/About";
+// import "./Pages/pages.css"
 
-function Navbar() {
- const [add,setAdd]=useState(0);
-
-  return (
-    <>
-<nav className="nav-line">
-<ul>
-  <li><a href="./home">Home</a></li>
-  <li><a href="./offers">Offers</a></li>
-  <li><a href="./contact">Contact</a></li>
-  <li><a href="./about">About</a></li>
-  <li onClick={()=>setAdd(add+1)}><a href="./menu">Menu</a></li>
-  
-</ul>
-</nav>
-  </>
-  );
-}
-
-export default Navbar;
+// function Navbar() {
+//   return (
+//     <BrowserRouter>
+//       <Routes>
+       
+//         <Route exact path="/" element={<Layout />}>
+//           <Route index element={<Home />} />
+//           <Route exact path="/blogs" element={<Blogs />} />
+//           <Route exact path="/contact" element={<Contact />} />
+//           <Route exact path="/menu" element={<Menu/>}/>
+//           <Route exact path="/about" element={<About/>}/>
+//           <Route exact path="/*" element={<NoPage />} />
+//         </Route>
+//       </Routes>
+//     </BrowserRouter>
+//   );
+// }
+// export default Navbar;

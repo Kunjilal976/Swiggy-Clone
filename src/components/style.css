@@ -71,7 +71,7 @@ button{
 
 button a{
     text-decoration: none;
-    color: rgb(206, 196, 181);
+    color: rgb(25, 24, 23);
 
 }
 
@@ -97,6 +97,7 @@ button a{
 .placeholder button{
     height: 60px;
     width: 70px;
+    color: rgb(154, 27, 27);
     background-color: rgb(255, 153, 0);
 }
 .placeholder input{
@@ -242,7 +243,11 @@ button a{
     display: flex;
     flex-direction: column;
 }
-/* hr.new1 {
-    padding-top: 200px;
-    border-top: 1px solid red;
-  } */
+
+#p{
+    text-align: center;
+    color: blueviolet;
+    height: 50px;
+    margin-top: 2em;
+}
+

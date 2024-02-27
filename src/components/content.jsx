@@ -1,22 +1,6 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 function Content() {
-
-    function Login() {
-        return (
-          <>
-          <form className='App'>
-          <label type="text" >Email Id:</label>
-          <input type="text" placeholder='Enter Email'/><br />
-          <label type="text">Password:</label>
-          <input type="password"  placeholder='Password' /><br />
-          <input type="submit" value="Submit" />
-          </form>
-    
-          </>
-          
-        )
-      }  
-   
 
   return (
 <>    
@@ -26,12 +10,13 @@ function Content() {
         <div className="leftbox">
     
             <div className="header">
-            <img src="dhaba logo.png" alt=''/>
-            <h2>PANJABI</h2>
-            <button onclick={Login}>Login</button>
+            <img src="swiggy.jpg" alt=''/>
+            <h2>Swiggy</h2>
 
-          
-            <button><a href="/">Sign Up</a></button>
+            <button><Link to="./Login">Login</Link>
+             </button>
+            
+          <button><Link to="./SignUp">SignUp</Link></button>
     
             </div>
     
@@ -136,6 +121,7 @@ function Content() {
                 </div>
                 
             </div>
+            <p id='p'>&copy; 2024 Your Food Website. All rights reserved.</p>
         </footer>
   </div>  
  </>
