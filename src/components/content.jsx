@@ -3,44 +3,44 @@ import {Link} from 'react-router-dom'
 function Content() {
 
   return (
-<>    
-
+<div>    
   <div className="container">
     <div className="front">
         <div className="leftbox">
     
-            <div className="header">
+         <div className="header">
             <img src="swiggy.jpg" alt=''/>
             <h2>Swiggy</h2>
-
-            <button><Link to="./Login">Login</Link>
-             </button>
-            
-          <button><Link to="./SignUp">SignUp</Link></button>
+            <button><Link to="./Login">Login</Link></button>
+            <button><Link to="./SignUp">SignUp</Link></button>
     
-            </div>
+         </div>
     
            <div className="linebox">
-            <h1>Late night at office?</h1>
-            <p>Order food from favourite restaurants near you.</p>
+             <h1>Late night at office?</h1>
+             <p>Order food from favourite restaurants near you.</p>
     
           <div className="placeholder">
-            <input type="text" placeholder="Enter the delivery location"/>
-            <button><a href="/">Food Point</a></button>
+             <div className="side">
+             <input type="text" placeholder="Enter the delivery location"/>
+             <button><a href="/">Food Point</a></button>
+             </div>
     
-            <h4>POPULAR CITIES IN INDIA</h4>
-            <p>Ahmedabad Bangalore Chennai Delhi Gurgaon Hyderabad Kolkata Mumbai Pune & more.</p>
+             <h4>POPULAR CITIES IN INDIA</h4>
+             <p>Ahmedabad Bangalore Chennai Delhi Gurgaon Hyderabad Kolkata Mumbai Pune & more.</p>
            </div>
     
           </div>
          </div>
     
         
-    
          <div className="rightbox">
             <img src="res food.jpg" alt="right"/>
          </div>
+        
       </div>
+
+     
     
      <div className="middle1">
        <div className="middlebox1">
@@ -124,7 +124,7 @@ function Content() {
             <p id='p'>&copy; 2024 Your Food Website. All rights reserved.</p>
         </footer>
   </div>  
- </>
+ </div>
   )
 }
 

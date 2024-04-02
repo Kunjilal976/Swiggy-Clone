@@ -1,26 +1,33 @@
-.containerA {
-    width: 50%;
+ .containerA {
+    padding-top: 40px;
     margin: 50px auto;
+    position: absolute;
+    background-color: #f0f0f0; 
+    padding: 10px; 
 }
-
+input{
+    width: 340px;
+    height: 40px;
+    border-radius: 5px;
+}
 label {
     display: block;
     margin-bottom: 5px;
-}
+} 
 
-input[type="text"],
-input[type="email"],
+
 textarea {
-    width: 100%;
+    width: 340px;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
+} 
 
 button {
     background-color: #f8c291;
     color: #fff;
+    align-items: center;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -29,6 +36,9 @@ button {
 
 button:hover {
     background-color: #e67e22;
+} 
+.containerAbout{
+    padding-top: 40px;
 }
 
 /* footer {
@@ -42,6 +52,7 @@ button:hover {
 
 
 .container2 {
+    padding-top: 40px;
     max-width: 800px;
     margin: 50px auto;
     display: grid;
@@ -51,34 +62,62 @@ button:hover {
     flex-direction: column;
 }
 
+/* Container styles */
+.container2 {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around; /* Adjust alignment as needed */
+    max-width: 1000px; /* Adjust as needed */
+    margin: auto;
+}
+
+/* Offer styles */
 .offer {
-    /* background-color: #67bd88; */
+    width: 30%; /* Adjust width as needed */
     padding: 20px;
-    border-radius: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .offer img {
-    width: 300px;
-    height: 300px;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
 }
 
 .offer h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 20px;
 }
 
 .offer p {
-    font-size: 16px;
-    color: #555;
+    margin-top: 10px;
 }
 
-/* img{
+
+
+
+.example-img{
+   
+    left: 20px; 
     width: 500px;
     height: 700px;
-    margin:5px 300px 500px 300px;
-    
-    
-} */
+}
+
+.menu{
+    padding-top: 10px;
+}
+
+.form{
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    border-style: groove;
+    margin-top: 20px;
+}
+
+.login{
+    padding-top: 40px;
+}

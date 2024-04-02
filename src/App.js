@@ -3,12 +3,12 @@ import './App.css';
 // import Navbar from './components/Navbar';
 import Content from './components/content';
 import './components/style.css'
-import { BrowserRouter as Router,Route,Routes } from 'react-router-dom'
-import Login from './Page/Login';
-import SignUp from './Page/SignUp';
+import {Route,Routes, BrowserRouter} from 'react-router-dom'
+import Login from './components/Login';
+import SignUp from './components/SignUp';
 
 
-import Layout from "./Pages/Layout";
+import Navbar from "./Pages/Navbar";
 import Home from "./Pages/Home";
 import Blogs from "./Pages/Blogs";
 import Contact from "./Pages/Contact";
@@ -20,22 +20,20 @@ import "./Pages/pages.css"
 function App() {
   return (
    <div>
-    <Router>
-      {/* <Navbar/> */}
-      <Layout/>
-      <Content/>
+    <BrowserRouter>
+      <Navbar/>
       <Routes>
-        <Route exact path="/Login" element={<Login/>}/>
-        <Route exact path="/SignUp" element={<SignUp/>}/>
-        <Route exact path="/" element={<Layout />}/>
-        <Route index element={<Home />} />
-          <Route exact path="/blogs" element={<Blogs />} />
-          <Route exact path="/contact" element={<Contact />} />
-          <Route exact path="/menu" element={<Menu/>}/>
-          <Route exact path="/about" element={<About/>}/>
-          <Route exact path="/*" element={<NoPage />} />
+        <Route path='/' element={<Content/>}/>
+        <Route  path="/login" element={<Login/>}/>
+        <Route  path="/signUp" element={<SignUp/>}/>
+        <Route path='/' element={<Home />} />
+        <Route  path="/blogs" element={<Blogs />} />
+        <Route  path="/contact" element={<Contact />} />
+        <Route  path="/menu" element={<Menu/>}/>
+        <Route  path="about" element={<About/>}/>
+        <Route  path="/*" element={<NoPage />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
    </div>
   );
 }

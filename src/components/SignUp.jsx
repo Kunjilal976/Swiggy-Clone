@@ -1,16 +1,14 @@
-import React,{useState} from "react";
+// import React,{useState} from "react";
 
 function SignUp() {
-  const [showSignUpPage, setShowSignUpPage] = useState(false);
+  // const [showSignUpPage, setShowSignUpPage] = useState(false);
 
-  const toggleSignUpPage = () => {
-    setShowSignUpPage(!showSignUpPage);
-  };
+  // const toggleSignUpPage = () => {
+  //   setShowSignUpPage(!showSignUpPage);
+  // };
 
   return (
-    <div>
-      <button onClick={toggleSignUpPage}>Click</button>
-      {showSignUpPage && (
+    <div className="login">      
         <div className="SignUpPage">
           <form className="App">
             <label type="text">Name:</label>
@@ -30,7 +28,7 @@ function SignUp() {
             <input type="reset" value="Reset" />
           </form>
         </div>
-      )}
+      
     </div>
   );
 }
