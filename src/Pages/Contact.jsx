@@ -1,19 +1,18 @@
 const Contact = () => {
     return (
-      <div class="containerA">
-        <form action="submit_form.php" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter name" required/>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter email" required/>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Submit</button>
+ 
+       <div className="contact">
+        <form action="" className=".form ">
+          <label htmlFor="">Name: </label>
+          <input type="text" placeholder="Enter your name" required />
+          <label htmlFor="">Email: </label>
+          <input type="text" placeholder="Enter your email"  required/>
+          <label htmlFor="">Name: </label>
+          <textarea type="text" placeholder="Write your query" required />
+          <button>submit</button>
         </form>
-    </div>
+       </div>
+   
     )
   };
   
